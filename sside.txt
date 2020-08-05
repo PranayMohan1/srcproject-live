@@ -1,0 +1,52 @@
+1. Creating userId
+
+First Go inside the srcproject Directory in shell
+----------------------------------------------------
+Create your user id
+----------------------------
+TYPE
+srcproject> python manage.py createsuperuser
+---------------------------------------------
+shell will ask for userId, password.. Fill it
+--------------------------------------------------
+-----------------------------------------------------------
+--------------------------------------------------
+
+
+
+2. Populating the database by dummy inputs
+
+First Go inside the srcproject Directory in shell.
+-------------------------------------------------
+TYPE 
+srcproject> python manage.py populate_members 100
+
+It will create 100 dummy Members.
+
+TYPE
+srcproject> python manage.py populate_periods 100
+
+It will create 100 dummy periods.
+-------------------------------------------------
+
+
+
+
+3.To see the JSON data and the POST it.
+
+First Go inside the srcproject Directory in shell.
+-------------------------------------------------
+TYPE 
+srcproject> python manage.py runserver
+
+It will give us the localserver link.
+Let's Open It.
+
+In the url section, Add
+  /activity/
+
+It takes us to the MemberList page.
+--------------------------------------------------
+All the GET,POST,PUT,DELETE options are available on this page.
+
+
