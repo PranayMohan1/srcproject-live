@@ -1,6 +1,6 @@
 from activity.models import Member,Period
 import random
-from activity.names import Names
+from activity.constants import Names
 import pytz
 import factory
 from datetime import datetime,date,time,timedelta

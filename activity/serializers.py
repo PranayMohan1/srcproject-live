@@ -22,7 +22,7 @@ class MemberSerializer(serializers.ModelSerializer):
     
     def update(self, instance, validated_data):
         activity_periods_data = validated_data.pop('activity_periods')
-        periodss = (instance.activity_periods).all()
+        periodss = instance.activity_periods.all()
         periodss = list(periodss)
         instance.id = validated_data.get('id', instance.id)
         instance.real_name = validated_data.get('real_name', instance.real_name)
